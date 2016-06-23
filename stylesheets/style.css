@@ -7,9 +7,9 @@ html, body {
 body {
   background: #f9f9f9;
   color: #303030;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Mono', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 19px;
   padding: 0;
   margin: 0; }
@@ -94,11 +94,12 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   background: #fff;
   margin: 40px auto 20px;
   border-radius: 7px;
   border: 1px solid #eee;
+  box-shadow: 0 0 15px 3px #eee;
   position: relative; }
   #container:before, #container:after {
     content: " ";
@@ -142,7 +143,7 @@ footer {
   width: 100%;
   border-width: 0;
   border-style: solid;
-  padding: 30px 60px;
+  padding: 30px 50px;
   margin: auto; }
 
 a, .as-link {
@@ -223,19 +224,16 @@ ul.posts, ul.posts li {
   padding: 0;
   list-style: none; }
 ul.posts li {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 ul.posts .datetime {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  width: 130px;
+  width: 100%;
   text-transform: uppercase;
-  float: right;
+  float: left;
   color: #999;
   font-size: 10px;
-  text-align: right; }
+  text-align: left; }
 
 section.post {
   margin: 0 -60px;
@@ -243,7 +241,7 @@ section.post {
   border-top: 0;
   padding: 0; }
   section.post > * {
-    padding: 0 60px; }
+    padding: 0 50px; }
   section.post ul ul, section.post ul ol, section.post ol ul, section.post ol ol {
     margin-left: 20px;
     padding: 0; }
@@ -265,7 +263,7 @@ section.post {
     border-top-right-radius: 3px; }
 
 section.post, section > p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6em; }
   section.post *, section > p * {
     max-width: 100%; }
@@ -283,7 +281,12 @@ section.post, section > p {
     position: relative;
     overflow: hidden;
     display: block;
-    padding: 15px 60px; }
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 7px;
+    margin-left: 0.7em;
+    margin-right: 0;
+  }
     section.post blockquote:hover, section > p blockquote:hover {
       color: #454545; }
     section.post blockquote:hover:before, section > p blockquote:hover:before {
@@ -312,7 +315,12 @@ section.post, section > p {
 
 .highlight {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border-radius: 3px;
+  width: 50em;
+  position: relative;
+  left: 0.75em;
+}
 
 pre {
   overflow-x: auto;
@@ -324,17 +332,22 @@ pre {
   box-sizing: border-box; }
 
 code {
-  font-size: 13px;
+  font-size: 16px;
   color: #eee;
   background: #39382e;
-  padding: 2px 4px 3px;
-  border-radius: 2px;
+  padding: 10px;
+  border-radius: 4px;
   line-height: 1.3em;
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
-  *vertical-align: auto; }
+  *vertical-align: auto;
+}
+
+pre > code {
+    width: 100%;
+}
 
 img {
   max-width: 100%; }
@@ -357,6 +370,6 @@ img {
   left: 50%;
   font-size: 60px; }
 .paging .left {
-  margin-left: -340px; }
+  margin-left: -420px; }
 .paging .right {
-  margin-left: 320px; }
+  margin-left: 400px; }
